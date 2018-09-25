@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { ImageBackground, View, StatusBar } from "react-native";
-import { Container, Button, H3, Text } from "native-base";
+import { Container, Button, Text } from "native-base";
+import LoginForm from "../form/LoginForm";
 
 import styles from "./styles";
 
@@ -11,31 +12,21 @@ class Home extends Component {
   render() {
     return (
       <Container>
-        <StatusBar barStyle="light-content" />
+        <StatusBar barStyle="light-content"/>
         <ImageBackground source={launchscreenBg} style={styles.imageContainer}>
           <View style={styles.logoContainer}>
             <ImageBackground source={launchscreenLogo} style={styles.logo} />
           </View>
-          <View
-            style={{
-              alignItems: "center",
-              marginBottom: 50,
-              backgroundColor: "transparent"
-            }}
+          <View style={styles.float}>
+          <LoginForm/>
+          <Button rounded primary
+            style={{ alignSelf: "center", marginTop: 25 }}
+            onPress={() => this.props.navigation.navigate("DrawerOpen")}
           >
-            <H3 style={styles.text}>App to showcase</H3>
-            <View style={{ marginTop: 8 }} />
-            <H3 style={styles.text}>NativeBase components</H3>
-            <View style={{ marginTop: 8 }} />
+            <Text>Lets Go!</Text>
+          </Button>
           </View>
-          <View style={{ marginBottom: 80 }}>
-            <Button
-              style={{ backgroundColor: "#6FAF98", alignSelf: "center" }}
-              onPress={() => this.props.navigation.navigate("DrawerOpen")}
-            >
-              <Text>Lets Go!</Text>
-            </Button>
-          </View>
+
         </ImageBackground>
       </Container>
     );

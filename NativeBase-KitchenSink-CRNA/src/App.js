@@ -2,6 +2,11 @@ import React from "react";
 import { Root } from "native-base";
 import { StackNavigator, DrawerNavigator } from "react-navigation";
 
+// Modif
+import Home from "./screens/home/";
+import LoginForm from "./screens/form/LoginForm";
+import ProjectsList from "./screens/ProjectsList/";
+
 import Header from "./screens/Header/";
 import Header1 from "./screens/Header/1";
 import Header2 from "./screens/Header/2";
@@ -38,7 +43,7 @@ import BasicFab from "./screens/fab/basic";
 import MultipleFab from "./screens/fab/multiple";
 import FixedLabel from "./screens/form/fixedLabel";
 import InlineLabel from "./screens/form/inlineLabel";
-import FloatingLabel from "./screens/form/floatingLabel";
+
 import PlaceholderLabel from "./screens/form/placeholder";
 import StackedLabel from "./screens/form/stacked";
 import RegularInput from "./screens/form/regular";
@@ -94,8 +99,7 @@ import AdvSegment from "./screens/segment/segmentTab";
 import SimpleDeck from "./screens/deckswiper/simple";
 import AdvancedDeck from "./screens/deckswiper/advanced";
 
-import Home from "./screens/home/";
-import Anatomy from "./screens/anatomy/";
+
 import Footer from "./screens/footer/";
 import NHBadge from "./screens/badge/";
 import NHButton from "./screens/button/";
@@ -123,8 +127,9 @@ import Actionsheet from "./screens/actionsheet";
 
 const Drawer = DrawerNavigator(
   {
+
     Home: { screen: Home },
-    Anatomy: { screen: Anatomy },
+    ProjectsList: { screen: ProjectsList },
     Header: { screen: Header },
     Footer: { screen: Footer },
     NHBadge: { screen: NHBadge },
@@ -160,6 +165,8 @@ const Drawer = DrawerNavigator(
 
 const AppNavigator = StackNavigator(
   {
+    LoginForm: { screen: LoginForm },
+
     Drawer: { screen: Drawer },
 
     Header1: { screen: Header1 },
@@ -203,9 +210,9 @@ const AppNavigator = StackNavigator(
     BasicFab: { screen: BasicFab },
     MultipleFab: { screen: MultipleFab },
 
+
     FixedLabel: { screen: FixedLabel },
     InlineLabel: { screen: InlineLabel },
-    FloatingLabel: { screen: FloatingLabel },
     PlaceholderLabel: { screen: PlaceholderLabel },
     StackedLabel: { screen: StackedLabel },
     RegularInput: { screen: RegularInput },

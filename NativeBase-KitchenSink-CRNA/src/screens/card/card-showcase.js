@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Image, Dimensions } from "react-native";
 import {
   Container,
-  Header,
   Title,
   Content,
   Button,
@@ -25,17 +24,7 @@ class NHCardShowcase extends Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Header>
-          <Left>
-            <Button transparent onPress={() => this.props.navigation.goBack()}>
-              <Icon name="arrow-back" />
-            </Button>
-          </Left>
-          <Body>
-            <Title>Card Showcase</Title>
-          </Body>
-          <Right />
-        </Header>
+
 
         <Content padder>
           <Card style={styles.mb}>

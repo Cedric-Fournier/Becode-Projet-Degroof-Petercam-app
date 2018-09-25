@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import NHCardShowcase from "../card/card-showcase"
 import {
   Container,
   Header,
@@ -7,8 +8,6 @@ import {
   Text,
   Button,
   Icon,
-  Footer,
-  FooterTab,
   Left,
   Right,
   Body
@@ -16,7 +15,7 @@ import {
 
 import styles from "./styles";
 
-class Anatomy extends Component {
+class ProjectsList extends Component {
   render() {
     return (
       <Container style={styles.container}>
@@ -30,25 +29,23 @@ class Anatomy extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Header</Title>
+            <Title>Projects list</Title>
           </Body>
           <Right />
         </Header>
 
-        <Content padder>
-          <Text>Content goes here</Text>
+        <Content>
+          <NHCardShowcase/>
+          <NHCardShowcase/>
+          <NHCardShowcase/>
+          <NHCardShowcase/>
+          <NHCardShowcase/>
+
         </Content>
 
-        <Footer>
-          <FooterTab>
-            <Button active full>
-              <Text>Footer</Text>
-            </Button>
-          </FooterTab>
-        </Footer>
       </Container>
     );
   }
 }
 
-export default Anatomy;
+export default ProjectsList;
