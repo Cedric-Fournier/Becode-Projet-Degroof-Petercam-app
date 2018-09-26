@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { ImageBackground, View, StatusBar } from "react-native";
 import { Container, Button, Text } from "native-base";
-import LoginForm from "../form/LoginForm";
+import LoginForm from "./LoginForm";
 
 import styles from "./styles";
 

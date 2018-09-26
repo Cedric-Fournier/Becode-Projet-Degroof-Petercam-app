@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NHCardShowcase from "../card/card-showcase"
+import NHCardShowcase from "../card/card-showcase";
 import {
   Container,
   Header,
