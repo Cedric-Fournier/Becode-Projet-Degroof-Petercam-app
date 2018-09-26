@@ -21,7 +21,7 @@ Le but principal du projet est d'analyser, concevoir et développer une applicat
    - **éliminatoire** : une application doit être conforme aux besoins fonctionnelles initialement exprimés par nos clients
 
    - **non éliminatoire** : une application fonctionnelle
-#####Evaluation :
+##### Evaluation :
 - conformité de la réalisation par rapport à la conception
 - fonctionnement de l'application ( boutons, écrans, ...)
 - qualité du code
