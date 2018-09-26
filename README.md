@@ -4,7 +4,7 @@
 - **Contexte** : Exercice de groupe réalisé durant notre formation en developpeur web au sein de [BeCode](https://github.com/becodeorg/)
 
 ## Description du projet
-Le but principaldu projet est d'analyser, concevoir et développer une application mobile pour Degroof Petercam.
+Le but principal du projet est d'analyser, concevoir et développer une application mobile pour Degroof Petercam.
 
  Celle-ci répond à un certain nombre d'objectifs:
 
