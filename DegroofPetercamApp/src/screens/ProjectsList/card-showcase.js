@@ -57,7 +57,7 @@ class NHCardShowcase extends Component {
             </CardItem>
             <CardItem style={{ paddingVertical: 0 }}>
               <Left>
-                <Button transparent onPress={() => this.props.navigation.navigate("ProjectPage")}>
+                <Button transparent>
                   <Icon name="md-paper"/>
                   <Text>Tell me more</Text>
                 </Button>
