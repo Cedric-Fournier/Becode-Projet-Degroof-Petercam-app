@@ -17,8 +17,8 @@ import {
 import styles from "./styles";
 
 const deviceWidth = Dimensions.get("window").width;
-const logo = require("../../../assets/logo.png");
-const cardImage = require("../../../assets/drawer-cover.png");
+const logo = require("../../../assets/logo-cc.png");
+const cardImage = require("../../../assets/cc-cover.png");
 
 class NHCardShowcase extends Component {
   render() {
@@ -32,8 +32,8 @@ class NHCardShowcase extends Component {
               <Left>
                 <Thumbnail source={logo} />
                 <Body>
-                  <Text>NativeBase</Text>
-                  <Text note>April 15, 2016</Text>
+                  <Text>{this.props.projectTitle}</Text>
+                  <Text note>{this.props.projectDate}</Text>
                 </Body>
               </Left>
             </CardItem>
@@ -51,19 +51,15 @@ class NHCardShowcase extends Component {
                   source={cardImage}
                 />
                 <Text>
-                  NativeBase is a free and source framework that enable
-                  developers to build high-quality mobile apps using React
-                  Native iOS and Android apps with a fusion of ES6. NativeBase
-                  builds a layer on top of React Native that provides you with
-                  basic set of components for mobile application development.
+                  {this.props.projectText}
                 </Text>
               </Body>
             </CardItem>
             <CardItem style={{ paddingVertical: 0 }}>
               <Left>
                 <Button transparent>
-                  <Icon name="logo-github" />
-                  <Text>4,923 stars</Text>
+                  <Icon name="md-paper"/>
+                  <Text>Tell me more</Text>
                 </Button>
               </Left>
             </CardItem>

@@ -9,6 +9,7 @@ const launchscreenBg = require("../../../assets/launchscreen-bg.png");
 const launchscreenLogo = require("../../../assets/logo-kitchen-sink.png");
 
 class Home extends Component {
+
   render() {
     return (
       <Container>
