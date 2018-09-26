@@ -1,39 +1,46 @@
 import React, { Component } from "react";
-import {
-  Content,
-  Button,
-  Item,
-  Label,
-  Input,
-  Form,
-  Text
-} from "native-base";
+import { Content, Item, Label, Input, Form, Button, Text } from "native-base";
 
 
 class LoginForm extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      email: "",
+      password: "",
+    }
+  }
+
+  sendData(){
+    this.props.onSend({email: this.state.email, pwd: this.state.password})
+  }
+
   render() {
     return (
-
-        <Content>
-          <Form>
-            <Item floatingLabel>
-              <Label>Username</Label>
-              <Input />
-            </Item>
-            <Item floatingLabel last>
-              <Label>Password</Label>
-              <Input secureTextEntry />
-            </Item>
-          </Form>
-          {/* <Button rounded primary
-            style={{ alignSelf: "center", marginTop: 25 }}
-            onPress={() => this.props.navigation.navigate("DrawerOpen")}
-          >
-            <Text>Lets Go!</Text>
-          </Button> */}
-
-        </Content>
-
+      <Content>
+        <Form>
+          <Item floatingLabel>
+            <Label>Email</Label>
+            <Input
+              value={this.state.email}
+              onChangeText={(email) => this.setState({email})}
+            />
+          </Item>
+          <Item floatingLabel last>
+            <Label>Password</Label>
+            <Input secureTextEntry 
+              value={this.state.password}
+              onChangeText={(password) => this.setState({password})}
+            />
+          </Item>
+          <Button rounded primary
+              style={{ alignSelf: "center", marginTop: 25 }}
+              onPress={this.sendData.bind(this)}
+            >
+              <Text>Lets Go!</Text>
+            </Button>
+        </Form>
+      </Content>
     );
   }
 }
