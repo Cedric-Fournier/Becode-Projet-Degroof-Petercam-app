@@ -4,12 +4,12 @@ import { StackNavigator, DrawerNavigator } from "react-navigation";
 
 // Modif
 import Home from "./screens/home/";
-import LoginForm from "./screens/home/LoginForm";
-import ProjectsList from "./screens/ProjectsList/";
-import ProjectPage from "./screens/ProjectsList/project-details";
-import NHCardShowcase from "./screens/ProjectsList/card-showcase";
 import SideBar from "./screens/sidebar";
+import LoginForm from "./screens/home/LoginForm";
 import PersonalPage from "./screens/PersonalPage/";
+import ProjectsList from "./screens/ProjectsList/";
+import NHCardShowcase from "./screens/ProjectsList/card-showcase";
+import ProjectPage from "./screens/ProjectsList/project-details";
 import MyMissions from "./screens/MyMissions/";
 import Archives from "./screens/Archives/";
 
@@ -17,10 +17,10 @@ import Archives from "./screens/Archives/";
 const Drawer = DrawerNavigator(
   {
     Home: { screen: Home },
-    ProjectsList: { screen: ProjectsList },
     PersonalPage: { screen: PersonalPage },
+    ProjectsList: { screen: ProjectsList },
     MyMissions: { screen: MyMissions},
-    Archives: { screen: Archives }
+    Archives: { screen: Archives },
   },
   {
     initialRouteName: "Home",
@@ -36,7 +36,7 @@ const AppNavigator = StackNavigator(
     LoginForm: { screen: LoginForm },
     Drawer: { screen: Drawer },
     NHCardShowcase: { screen: NHCardShowcase },
-    ProjectPage: { screen: ProjectPage },
+    ProjectPage: { screen: ProjectPage }
   },
   {
     initialRouteName: "Drawer",
