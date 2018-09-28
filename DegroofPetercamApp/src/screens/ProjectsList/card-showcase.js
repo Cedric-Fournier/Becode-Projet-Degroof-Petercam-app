@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import { Image, Dimensions } from "react-native";
 import {
   Container,
-  Title,
   Content,
-  Button,
-  Icon,
   Card,
   CardItem,
   Text,
@@ -14,7 +11,6 @@ import {
   Body
 } from "native-base";
 import styles from "./styles";
-import ProjectPage from "./project-details";
 
 const deviceWidth = Dimensions.get("window").width;
 const logo = require("../../../assets/logo-cc.png");
@@ -24,8 +20,6 @@ class NHCardShowcase extends Component {
   render() {
     return (
       <Container style={styles.container}>
-
-
         <Content padder>
           <Card style={styles.mb}>
             <CardItem bordered>
@@ -37,7 +31,6 @@ class NHCardShowcase extends Component {
                 </Body>
               </Left>
             </CardItem>
-
             <CardItem>
               <Body>
                 <Image
@@ -50,18 +43,8 @@ class NHCardShowcase extends Component {
                   }}
                   source={cardImage}
                 />
-                <Text>
-                  {this.props.projectText}
-                </Text>
+                <Text>{this.props.projectText}</Text>
               </Body>
-            </CardItem>
-            <CardItem style={{ paddingVertical: 0 }}>
-              <Left>
-                <Button transparent>
-                  <Icon name="md-paper"/>
-                  <Text>Tell me more</Text>
-                </Button>
-              </Left>
             </CardItem>
           </Card>
         </Content>

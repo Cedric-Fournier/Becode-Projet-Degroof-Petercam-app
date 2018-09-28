@@ -1,16 +1,6 @@
 import React, { Component } from "react";
 import { Image } from "react-native";
-import {
-  Content,
-  Text,
-  List,
-  ListItem,
-  Icon,
-  Container,
-  Left,
-  Right,
-  Badge
-} from "native-base";
+import { Content, Text, List, ListItem, Icon, Container, Left, Right, Badge } from "native-base";
 import styles from "./style";
 
 const drawerCover = require("../../../assets/drawer-cover.png");
@@ -36,9 +26,15 @@ const datas = [
     types: "2"
   },
   {
-    name: "Archives",
+    name: "History",
     route: "Archives",
     icon: "archive",
+    bg: "#EB6B23"
+  },
+    {
+    name: "Logout",
+    route: "Home",
+    icon: "md-log-out",
     bg: "#EB6B23"
   },
 ];

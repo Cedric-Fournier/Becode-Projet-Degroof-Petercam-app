@@ -15,15 +15,15 @@ import Archives from "./screens/Archives/";
 
 
 const Drawer = DrawerNavigator(
-  {
-    Home: { screen: Home },
+  {    
     ProjectsList: { screen: ProjectsList },
     PersonalPage: { screen: PersonalPage },
     MyMissions: { screen: MyMissions},
-    Archives: { screen: Archives }
+    Archives: { screen: Archives },
+    Logout: { screen: Home},
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: "ProjectsList",
     contentOptions: {
       activeTintColor: "#e91e63"
     },
@@ -32,14 +32,14 @@ const Drawer = DrawerNavigator(
 );
 
 const AppNavigator = StackNavigator(
-  {
+  {    
+    Home: { screen: Home },
     LoginForm: { screen: LoginForm },
     Drawer: { screen: Drawer },
-    NHCardShowcase: { screen: NHCardShowcase },
     ProjectPage: { screen: ProjectPage },
   },
   {
-    initialRouteName: "Drawer",
+    initialRouteName: "Home",
     headerMode: "none"
   }
 );
