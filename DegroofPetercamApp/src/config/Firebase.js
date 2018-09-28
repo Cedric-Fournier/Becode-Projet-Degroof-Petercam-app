@@ -2,12 +2,12 @@ import firebase from "firebase";
 require('firebase/auth');
 
 const config = {
-    apiKey: "AIzaSyDv3Y8yHCatFh4umfqPE2FdwuZHFwjvCFc",
-    authDomain: "dp-app-fe51e.firebaseapp.com",
-    databaseURL: "https://dp-app-fe51e.firebaseio.com",
-    projectId: "dp-app-fe51e",
-    storageBucket: "dp-app-fe51e.appspot.com",
-    messagingSenderId: "396599944025"
+    apiKey: "YOUR DATA",
+    authDomain: "YOUR DATA",
+    databaseURL: "YOUR DATA",
+    projectId: "YOUR DATA",
+    storageBucket: "YOUR DATA",
+    messagingSenderId: "YOUR DATA"
 };
 
 const firebaseApp = firebase.initializeApp(config);
