@@ -1,4 +1,5 @@
 # Challenge Degroof Petercam 2018
+
 - **Date prévue** : semaine du 24 au 28 septembre 2018
 - **Deadline** : vendredi 28 remise via deploiement
 - **Contexte** : Exercice de groupe réalisé durant notre formation en developpeur web au sein de [BeCode](https://github.com/becodeorg/)
@@ -36,3 +37,7 @@ Le but principal du projet est d'analyser, concevoir et développer une applicat
 ## Screenshots 
 
 ![How it looks!](./dpapp.gif)
+
+## Result
+
+Our project has been evaluated as the **3rd** best project of the competition (on 10 projects) by the Degroof Petercam Team. 
