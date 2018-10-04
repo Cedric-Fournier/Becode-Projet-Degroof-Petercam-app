@@ -16,12 +16,12 @@ Le but principal du projet est d'analyser, concevoir et développer une applicat
 - **Horizons** : S'ouvrir sur les différents environnements techniques et frameworks disponibles sur le marché, publier une application dans un store, différence entre app Android et iOs,...S'ouvrir sur le monde du mobile.
 - **Os** : Linux(Ubuntu), Windows ou MacOs 
 
-#### Critères et évaluation :
-##### Les critères d'acceptation : 
+### Critères et évaluation :
+#### Les critères d'acceptation : 
    - **éliminatoire** : une application doit être conforme aux besoins fonctionnelles initialement exprimés par nos clients
-
    - **non éliminatoire** : une application fonctionnelle
-##### Evaluation :
+
+#### Evaluation :
 - conformité de la réalisation par rapport à la conception
 - fonctionnement de l'application ( boutons, écrans, ...)
 - qualité du code
@@ -33,3 +33,6 @@ Le but principal du projet est d'analyser, concevoir et développer une applicat
 - [Cedric Fournier](https://github.com/Cedric-Fournier)
 - [Jesse Fumba](https://github.com/JFumba)
 
+## Screenshots 
+
+![How it looks!](DegroofPetercamApp/assets/appresult.gif)
