@@ -35,4 +35,4 @@ Le but principal du projet est d'analyser, concevoir et développer une applicat
 
 ## Screenshots 
 
-![How it looks!](./assets/appresult.gif)
+![How it looks!](appresult.gif)
